@@ -1,18 +1,18 @@
-Yo <%= @order.name.split(" ").first %>,
+Hi <%= @order.name.split(" ").first %>,
 
-I just got the list of books you asked for- rad!
+I just got the list of books you asked for- cool!
 
-Thanks for supporting my experiment. I hope you read the books and put them
-to good use!
+Thank you for supporting our experiment. I hope you read the books and put them
+to good use or share it again after you are done!
 
 If you wouldn't mind sharing on social media, that'd be cool. Something like:
 
-"Just nabbed <%= @order.books.count %> books for free from https://shareprogrammingbooks.com!"
+"Just grabbed a programming book for free from https://www.shareprogrammingbooks.com"
 
 ORDER DETAILS
 =============
 
-Order ID: <%= @order.uuid %> (https://shareprogrammingbooks.com/orders/<%= @order.uuid %>)
+Order ID: <%= @order.uuid %> (https://www.shareprogrammingbooks.com/orders/<%= @order.uuid %>)
 Paid: <%= @order.total_amount / 100.0 %>
 
 Your books:
@@ -22,8 +22,8 @@ Your books:
 
 Thanks again!
 
--s
+-Wonjun
 @wonjun27 (http://twitter.com/wonjun27)
 
-P.S Your books should arrive in 1-2 weeks. I'll send you an email when they
+P.S Your books should arrive in 1-2 weeks. We'll send you an email when they
 get shipped but unfortunately USPS Media Mail does not have tracking numbers!
