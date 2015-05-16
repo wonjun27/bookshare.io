@@ -42,4 +42,11 @@ group :development do
   gem "binding_of_caller"
 end
 
-ruby '2.1.5'
+group :development do
+	ruby '2.2.2'
+end
+
+group :production do
+  ruby '2.1.5'
+end
+
