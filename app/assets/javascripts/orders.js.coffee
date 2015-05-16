@@ -29,7 +29,7 @@ $ ->
 
   $("#checkout").click ->
     handler.open {
-      name: "bookshare.io",
+      name: "ShareProgrammingBooks.com",
       description: "Shipping & Handling for Books",
       amount: $("#total_amount").data("amount")
     }

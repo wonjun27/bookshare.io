@@ -11,7 +11,7 @@ class OrdersController < ApplicationController
     @order.city     = params[:order][:city]
     @order.state    = params[:order][:state]
     @order.zip      = params[:order][:zip]
-    @order.country  = "United States of America" # Force country for now
+    @order.country  = params[:order][:country]
 
     # TODO: Handle error case
     if @order.save

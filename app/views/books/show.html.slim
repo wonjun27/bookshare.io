@@ -22,9 +22,8 @@
               p You've already placed your order! Thanks!
             - elsif @order.items.where(book_isbn: @book.isbn).count == 1
               p
-                | You claimed this book! You can choose up to
-                =" #{books_left}"
-                |  more books!
+                | You claimed this book! You can just pay for shipping 
+                |  now!
                 =link_to " (Unclaim)", claim_book_path(@book.isbn), method: :delete
               p
                 b You can lose this book if someone else pays for shipping first!

@@ -1,5 +1,5 @@
 class OrderMailer < ActionMailer::Base
-  default from: "Steve at Bookshare <steve@mg.bookshare.io>"
+  default from: "Wonjun at Bookshare <wonjun@hotmail.com>"
 
   def thank_you_email(order)
     @order = order

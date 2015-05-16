@@ -2,8 +2,8 @@
   h2 Shipping Information
   .row
     .col-md-6
-      p.lead I'm shipping your books using USPS Media Mail
-      p This makes it super cheap to ship you the books, but I need to know your address so I can calculate the costs.
+      p.lead We're shipping your books using USPS Media Mail or Canada Post
+      p This makes it super cheap to ship you the books, but We need to know your address so we can calculate the costs.
 
       - if @order.errors.any?
         .alert.alert-danger
@@ -38,11 +38,10 @@
         .form-group
           label.control-label.col-sm-3 for="order[country]" Country:
           .col-sm-6
-            p US Only (Sorry! I'm still figuring out International Shipping!)
+            input.form-control name="order[country]" type="text" placeholder="Enter your Country"
         button.btn.btn-primary type="submit" Calculate Shipping
-        //p.lead Sorry about that, orders are wonky at the moment.
     .col-md-6
-      p.lead I'm going to send you these books
+      p.lead We're going to send you these books
 
       table.table.table-striped
 
