@@ -6,7 +6,7 @@ nav.navbar.navbar-default.navbar-bookshare role="navigation"
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand href=root_path bookshare
+      a.navbar-brand href=root_path ShareProgrammingBooks.com
 
     .collapse.navbar-collapse#navbar-main
       ul.nav.navbar-nav
@@ -14,7 +14,7 @@ nav.navbar.navbar-default.navbar-bookshare role="navigation"
         =nav_link "Filter by Genre", "/books/categories"
         =nav_link "FAQ", "/faq"
         li
-          a#contact href="" Contact
+          /!a#contact href="" Contact
 
       - if @order.paid?
         a.button.btn.btn-success.navbar-btn.navbar-right href=order_path(@order.uuid) View Order
