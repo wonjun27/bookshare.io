@@ -32,10 +32,18 @@ The application depends on the environmental variables—
     ADMIN_PASSWORD
 
 # How to Add books
-
+    development:
     rails console
-    app.post '/books', {"token"=>"",  "isbn"=>'0321700694'}
+    app.post '/books', {"token"=>"SECRET_TOKEN",  "isbn"=>'0321700694'}
 
+    production:
+    Make a POST request to https://www.shareprogrammingbooks.com/books
+    and fill Parameters; token, isbn
+
+# Heroku commands
+    heroku run console  --app guarded-cove-1209   
+    heroku logs --tail --app guarded-cove-1209 
+    heroku certs --app guarded-cove-1209
 
 ### MIT License
     
