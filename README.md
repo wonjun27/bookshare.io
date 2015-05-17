@@ -34,7 +34,7 @@ The application depends on the environmental variables—
 # How to Add books
     development:
     rails console
-    app.post '/books', {"token"=>"SECRET_TOKEN",  "isbn"=>'0321700694'}
+    app.post '/books', {"token"=>"SECRET_TOKEN",  "isbn"=>'0201633612'}
 
     production:
     Make a POST request to https://www.shareprogrammingbooks.com/books
