@@ -11,6 +11,7 @@ module BooksHelper
     opts[:height]  ||= 300
     opts[:crop]    ||= "fill"
     opts[:gravity] ||= "north"
+    opts[:secure]  ||= true 
 
     cl_image_tag("#{book.isbn}_cover.jpg", opts)
   end

@@ -41,6 +41,8 @@ The application depends on the environmental variables—
     and fill Parameters; token, isbn
 
 # Heroku commands
+    rails s # starts the local rails server on Dev environment
+    git push heroku master
     heroku run console  --app guarded-cove-1209   
     heroku logs --tail --app guarded-cove-1209 
     heroku certs --app guarded-cove-1209
