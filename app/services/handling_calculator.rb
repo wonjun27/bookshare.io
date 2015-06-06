@@ -1,7 +1,7 @@
 class HandlingCalculator
 
   # USPS Media Mail (TODO: Dynamic Calculation)
-  DOMESTIC_BASE  = 369
+  DOMESTIC_BASE  = 500
   DOMESTIC_POUND = 95
 
   # Packing Materials
