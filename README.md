@@ -40,6 +40,16 @@ The application depends on the environmental variables—
     Make a POST request to https://www.shareprogrammingbooks.com/books
     and fill Parameters; token, isbn
 
+    From command line,
+
+    curl -X POST -H "Content-Type: application/json" -d '{"token":"admin","isbn":"1430200715"}' 'https://www.shareprogrammingbooks.com/books'
+
+    Live Database
+    postgre client - pgAdmin 
+    credentials in database.yml
+
+    Images
+    Cloudinary.com - Upload manually when a different image should be used
 # Heroku commands
     rails s # starts the local rails server on Dev environment
     git push heroku master
